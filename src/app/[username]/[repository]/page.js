@@ -1,7 +1,8 @@
 import AppHeader from "@/components/app-header";
+import { useParams } from "next/navigation";
 
-export default async function UserRepositoryPage({ params }) {
-  const { username, repository } = await params;
+export default function UserRepositoryPage() {
+  const { username, repository } = useParams();
 
   return (
     <>
